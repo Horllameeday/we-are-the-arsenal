@@ -21,8 +21,9 @@
             </form>
         @endif
     <div>Likes: {{$likes}}</div>
-    <div><a href="{{route('posts.like', $post->slug)}}">Like<i class="fas fa-thumbs-up" aria-hidden="true"></i></a></div>
+    <div><a href="{{route('posts.like', $post->slug)}}">Like<i class="fas fa-thumbs-up" aria-hidden="true"></i></a></div><br><br>
     <div>
+    Comments:<br>
     @if(count($comments)>0)
         @foreach($comments as $comment)
         <div>
